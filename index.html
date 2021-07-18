@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Getting Started with JavaScript</title>
+
+    <style>
+        body, .jumbotron {
+            padding: 40px;
+        }
+        .text-giant {
+            font-size:  60px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h2>How much do burgers cost?</h2>
+
+        <form class="form-group">
+            <label for="price">Price</label>
+            <input type="text" class="form-control" name="price" value = '30'>
+        </form>
+
+        <div class="form-group">
+            <label for="quantity">
+                Quantity
+                <span class="label label-primary qty-label">1</span>
+            </label>
+            <input type="range" min="1" max="10" step="1" class="form-control" name='quantity' value="1">
+        </div>
+
+        <div class="text-right text-giant total"></div>
+    
+    </div>
+
+  
+    
+
+
+    <script src="calc_logic.js"> </script>
+
+</body>
+</html>
